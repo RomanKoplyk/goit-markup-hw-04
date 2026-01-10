@@ -59,6 +59,7 @@ h6 {
 
 .header {
     border-bottom: 1px solid #e7e9fc; 
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
     }
 
 .header-link-logo { 
@@ -118,6 +119,8 @@ h6 {
         text-decoration: none;
         padding: 24px 0;
         display: block;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-link:hover, .header-link:focus {
@@ -146,6 +149,7 @@ h6 {
     width: 100%;
     height: 4px;
     background-color: #404bbf;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
     
 }
@@ -158,7 +162,6 @@ h6 {
     line-height: 1.5;
     letter-spacing: 0.02em;        
     color: #404bbf;
-    animation-duration: 250ms;
 }
 
 .header-contacts {
@@ -180,18 +183,18 @@ h6 {
 }
  
 .contacts-link {
-    
-        font-family: "Roboto",
-        sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-        text-decoration: none;
-        font-style: normal;
-        padding: 24px 0;
-        display: block;
+    font-family: "Roboto",
+    sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-decoration: none;
+    font-style: normal;
+    padding: 24px 0;
+    display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -210,7 +213,8 @@ h6 {
     background-color: #2e2f42;
     padding: 188px 0;
     background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7)),
+    linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
     url(../images/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -238,16 +242,16 @@ h6 {
 
 .solutions-title {
     font-family: "Roboto",
-            sans-serif;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #fff;
-        margin: 0 auto 48px;
-        max-width: 496px;
-        align-items: center;
+        sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto 48px;
+    max-width: 496px;
+    align-items: center;
 }
 
 .hero-button {
@@ -269,14 +273,14 @@ h6 {
     border-radius: 4px;
     height: 56px;
     min-width: 169px; 
-    border: none;   
+    border: none; 
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solutions-button:hover,
 .solutions-button:focus {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #404bbf;
-    animation-duration: 250ms;    
+    background-color: #404bbf;  
 }
 
 
@@ -303,16 +307,16 @@ h6 {
 } */
 
 .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
     }
 
 .features-list { 
@@ -340,25 +344,24 @@ h6 {
     
 }
 
-.features-subtitle {
-    
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        text-align: left;
-        margin-bottom: 8px;
+.features-subtitle {    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: left;
+    margin-bottom: 8px;
     }
 
 .features-text {
 
     font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-        text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: left;
     }
 
 
@@ -397,12 +400,12 @@ h6 {
     border-radius: 4px;
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    background: #fff;
-    animation-duration: 250ms;
+    background: #fff;   
 }
 .team-img {
     display: block;
@@ -419,7 +422,7 @@ h6 {
 }
 
 .container-team {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .team-subtitle {
@@ -454,7 +457,7 @@ h6 {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  .team-social-link:hover {
@@ -525,19 +528,16 @@ h6 {
 
 .portfolio-item:hover .portfolio-item-text {
     box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
-        0 1px 1px rgba(46, 47, 66, 0.16),
-        0 1px 6px rgba(46, 47, 66, 0.08);
-        animation-duration: 250ms;
-        transform: translateY(0);
-        cursor: pointer;
+    0 1px 1px rgba(46, 47, 66, 0.16),
+    0 1px 6px rgba(46, 47, 66, 0.08);
+    transform: translateY(0);
+    cursor: pointer;
 }
 
 .portfolio-img {
     display: block;
     width: 100%;
-    height: auto;
-   
-
+    height: auto;   
 }
 
 .container-portfolio {
@@ -584,15 +584,15 @@ h6 {
 
 .footer-link {
     font-family: "Raleway",
-        sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #f4f4fd;
-        text-decoration: none;
-        display: inline-block;            
+    sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
+    text-decoration: none;
+    display: inline-block;            
 }
 
 
@@ -646,12 +646,7 @@ h6 {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-      
-    &:hover {
-        background-color: #31D0AA;
-    }
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover {
