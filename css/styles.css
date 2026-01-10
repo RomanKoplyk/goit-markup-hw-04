@@ -112,18 +112,19 @@ h6 {
 .header-link {
     
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        text-decoration: none;
-        padding: 24px 0;
-        display: block;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-decoration: none;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.header-link:hover, .header-link:focus {
+.header-link:hover, 
+.header-link:focus {
     color: #404bbf;
 }
 
@@ -149,7 +150,7 @@ h6 {
     width: 100%;
     height: 4px;
     background-color: #404bbf;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
     
 }
@@ -194,7 +195,7 @@ h6 {
     font-style: normal;
     padding: 24px 0;
     display: block;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -204,7 +205,6 @@ h6 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #404bbf;
-    animation-duration: 250ms;
 }
 
 /*----SOLUTIONS-----*/
@@ -221,7 +221,6 @@ h6 {
     max-width: 1440px;
     margin: 0 auto;
     background-size: cover;
-
 }
 
 .hero-container {
@@ -274,7 +273,10 @@ h6 {
     height: 56px;
     min-width: 169px; 
     border: none; 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .solutions-button:hover,
@@ -395,12 +397,15 @@ h6 {
 
 .team-item { 
     margin: 0 auto;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: #fff;
     border-radius: 4px;
     width: calc((100% - 72px) / 4);
     border-radius: 0 0 4px 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item:hover {
@@ -460,7 +465,8 @@ h6 {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
- .team-social-link:hover {
+ .team-social-link:hover, 
+ .team-social-link:focus {
      background-color: #404bbf;
  }
     
@@ -499,7 +505,6 @@ h6 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    position: relative;  
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
@@ -518,20 +523,25 @@ h6 {
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     position: absolute;
     padding: 40px 32px;
     overflow: hidden;
     transform: translateY(100%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.portfolio-item:hover .portfolio-item-text {
-    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow:
+    0 2px 1px rgba(46, 47, 66, 0.08),
     0 1px 1px rgba(46, 47, 66, 0.16),
     0 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover .portfolio-item-text,
+.portfolio-item:focus .portfolio-item-text {
     transform: translateY(0);
-    cursor: pointer;
 }
 
 .portfolio-img {
@@ -592,7 +602,8 @@ h6 {
     text-transform: uppercase;
     color: #f4f4fd;
     text-decoration: none;
-    display: inline-block;            
+    display: inline-block;
+    margin-bottom: 16px;            
 }
 
 
@@ -649,7 +660,8 @@ h6 {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
     background-color: #31D0AA;
 }
 
